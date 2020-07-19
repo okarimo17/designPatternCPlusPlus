@@ -3,15 +3,14 @@
 
 using namespace std;
 /*
-Problème
-– on veut assurer la cohérence entre des classes coopérant
-entre elles tout en maintenant leur indépendance
-
-• Conséquences
-+ couplage abstrait entre un sujet et un observeur, support pour
-la communication par diffusion,
-– MAIS des mises à jour inattendues peuvent survenir, avec
-des coûts importants.
+Problem
+- we want to ensure consistency between cooperating classes
+while maintaining their independence
+• Consequences
++ abstract coupling between a subject and an observer, support for
+broadcast communication,
+- BUT unexpected updates may occur, with
+significant costs.
 
 */
 
