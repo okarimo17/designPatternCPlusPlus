@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 using namespace std;
 
@@ -18,7 +18,10 @@ products
 - the introduction of new products in the AbstractFactory is not
 easy
 */
-
+/*
+Button interface is product1 equiv,
+Card interface is product2 equiv,
+*/
 
 class Button {
   protected:
