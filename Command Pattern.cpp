@@ -72,9 +72,8 @@ class LightInvoker{
 
 int main(){
   LampReceiver * lampRec = new LampReceiver();
-  Command * turnOnCommand = new TurnOnCommand(lampRec);
-  Command * turnOffCommand = new TurnOffCommand(lampRec);
-  LightInvoker * lightInvoke = new LightInvoker(turnOnCommand,turnOffCommand);
+
+  LightInvoker * lightInvoke = new LightInvoker(new TurnOnCommand(lampRec),new TurnOffCommand(lampRec));
   
   lightInvoke->turnLightOn();
   lightInvoke->turnLightOff();
