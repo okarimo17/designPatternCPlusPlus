@@ -6,7 +6,7 @@ using namespace std;
 
 class AbstractArticleTemplate {
   public:
-    void renderTemplate(){
+    void renderTemplate() final {
       cout<<"<div id='article-page'>"<<endl;
       cout<<pageHeader()<<endl<<pageContent()<<endl<<pagefotter();
       cout<<endl<<"</div>"<<endl;
